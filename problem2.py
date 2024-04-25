@@ -37,3 +37,16 @@ example:
 Enter a number: -4
 Invalid input
 """
+##import modules
+import math
+
+#Define vars
+UE = 0
+aa = 1
+n = float(input("Please enter a number, must be a positive intager."))
+if int(n) == n and n > 0:
+    n = int(n)
+    for i in range(1, n + 1):
+        aa = aa * i
+    print(f"{n}! is {aa}")
+##test if user input is valid. else, set variable "user error" (UE) to true (1)

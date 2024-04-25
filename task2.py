@@ -14,3 +14,17 @@ Your GST is 2.75
 Your PST is 3.85
 Your total is 61.65
 """
+##define vars
+subtotal = 0
+
+print("Lord beelzebul will calculate the total price of of 5 items, and their taxes.")
+for i in range(1, 6):
+    n = round(float(input(f"please enter the price of item {i}: ")), 2)
+    subtotal = subtotal + n
+print(f"the subtotal is ${round(subtotal, 2)}.")
+GST = round(subtotal * 0.05, 2)
+PST = round(subtotal * 0.07, 2)
+total = round(subtotal + PST + GST, 2)
+print(f"the GST is ${GST}.")
+print(f"the PST is ${PST}.")
+print(f"the total is ${total}.")

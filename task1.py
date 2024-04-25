@@ -25,3 +25,9 @@ example:
 Enter number:4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+
+n = int(input("please input an intager"))
+print(f"some multiples of {n} are: ", end="")
+for i in range(12):
+    e = i * n
+    print(f"{e}, ", end="")

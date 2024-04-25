@@ -17,3 +17,9 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+
+n = int(input("please input a number less than 10."))
+if 0 < n < 10:
+    n = n + 1
+    for i in range(1, n):
+        print(i, end="")

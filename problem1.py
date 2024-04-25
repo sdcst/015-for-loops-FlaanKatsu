@@ -22,3 +22,10 @@ enter a number:4
 ****
 
 """
+n = round(float(input("please enter a number less than 10.")), 0)
+n = int(n)
+if n < 10:
+    for b in range(n):
+        print("*" * n)
+elif n >= 10:
+    print("Error: your number is too large.(Must be less than 10)")
